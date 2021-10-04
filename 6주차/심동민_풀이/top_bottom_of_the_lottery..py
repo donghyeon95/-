@@ -10,11 +10,7 @@ def solution(lottos, win_nums):
         if lotto in win_nums:
             corr += 1
 
-    if corr > 0:
-        min_rate = corr
-        max_rate = corr + magic_num
-    else:
-        min_rate = corr
-        max_rate = corr + magic_num
+    min_rate = corr
+    max_rate = corr + magic_num
 
-    return list(answer[max_rate], answer[min_rate])
+    return answer[max_rate], answer[min_rate]
