@@ -16,7 +16,7 @@ while first <= last:
     else :
         first = mid + 1
         
-    # print(cost, mid, first, last)
+    print(cost, mid, first, last)
     # elif로 할 경우 2번케이스 시간초과
     # elif cost < m:
     #     first = mid + 1

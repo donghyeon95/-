@@ -12,7 +12,7 @@ def shoot(s_position, h_list, start):
             h_list[i] += 1
             s_height -= 1
             
-        # print(s_height, h[i], h_list)
+        print(s_height, h[i], h_list)
 
     
 n = int(input())

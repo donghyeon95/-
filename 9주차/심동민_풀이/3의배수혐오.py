@@ -17,3 +17,19 @@ def solution(n, array):
 
 
 print(solution(n, array))
+
+
+
+
+
+# 모범 답안
+input()
+a=[[],[],[]]
+for v in map(int,input().split()):a[v%3]+=v,
+if len(a[0])>1+len(a[1]+a[2])or (a[1] and a[2] and not a[0]):print(-1)
+else:
+ r=[]
+ for v in a[0]:
+  if r:r+=(a[1]or a[2]).pop(),
+  r+=v,
+ print(*a[1]+r+a[2])
