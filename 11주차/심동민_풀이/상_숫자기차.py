@@ -9,7 +9,7 @@ def solution(n):
     a = [0]+[1]*9
     b = [0]*10
 
-    for _ in range(2, n+1):
+    for _ in range(2, n+1)
         b[0] = a[1]
         b[9] = a[8]
         for i in range(1, 9):
@@ -21,4 +21,4 @@ def solution(n):
 
 if __name__ == "__main__":
     n = int(input())
-    print(solution(n))
+    print(solution(n)):
